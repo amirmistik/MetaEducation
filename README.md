@@ -30,5 +30,8 @@ MetaEducation app for competition
 
 -Ui is ready
 
+-Video for metaeducation is ready
+
+-Design part of app is ready
 
 -publish app in Google play
