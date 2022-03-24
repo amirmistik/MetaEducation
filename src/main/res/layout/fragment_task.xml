@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.TaskFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/algebra_panel_video"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/panel_with_shadow_with_round_corners"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:text="@string/algebra"
+                    android:textColor="#404040"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/geometry_panel_video"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/panel_with_shadow_with_round_corners"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/algebra_panel_video"
+                app:layout_constraintStart_toStartOf="@+id/algebra_panel_video"
+                app:layout_constraintTop_toBottomOf="@+id/algebra_panel_video">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:text="@string/geometry"
+                    android:textColor="#404040"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/informatica_panel_video"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/panel_with_shadow_with_round_corners"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/algebra_panel_video"
+                app:layout_constraintStart_toStartOf="@+id/algebra_panel_video"
+                app:layout_constraintTop_toBottomOf="@+id/geometry_panel_video">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:text="@string/informatica"
+                    android:textColor="#404040"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
