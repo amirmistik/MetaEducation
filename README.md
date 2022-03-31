@@ -35,3 +35,7 @@ MetaEducation app for competition
 -Design part of app is ready
 
 -publish app in Google play
+
+*Five Commit*
+
+-put src folder into app, now you can import it to android studio
