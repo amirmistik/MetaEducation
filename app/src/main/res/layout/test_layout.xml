@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/done_panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/panel_with_shadow_with_round_corners"
+                android:padding="16dp">
+
+                <CheckBox
+                    android:id="@+id/f_yes_one"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/yes"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/f_no_one"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/f_no_one"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/no"
+                    android:textAlignment="inherit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/f_yes_one" />
+
+                <TextView
+                    android:id="@+id/first_q"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="FIRST QUESTION"
+                    android:textAlignment="center"
+                    android:textColor="#323232"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/f_yes_one"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/panel_with_shadow_with_round_corners"
+                android:padding="16dp">
+
+                <CheckBox
+                    android:id="@+id/f_yes_two"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/yes"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/f_no_two"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/f_no_two"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/no"
+                    android:textAlignment="inherit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/f_yes_two" />
+
+                <TextView
+                    android:id="@+id/second_q"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="SECOND QUESTION"
+                    android:textAlignment="center"
+                    android:textColor="#323232"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/f_yes_two"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/panel_with_shadow_with_round_corners"
+                android:padding="16dp">
+
+                <CheckBox
+                    android:id="@+id/f_yes_three"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/yes"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/f_no_three"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/f_no_three"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/no"
+                    android:textAlignment="inherit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/f_yes_three" />
+
+                <TextView
+                    android:id="@+id/third_q"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="THIRD QUESTION"
+                    android:textAlignment="center"
+                    android:textColor="#323232"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/f_yes_three"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/panel_with_shadow_with_round_corners"
+                android:padding="16dp">
+
+                <CheckBox
+                    android:id="@+id/f_yes_fourth"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/yes"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/f_no_fourth"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/f_no_fourth"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/no"
+                    android:textAlignment="inherit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/f_yes_fourth" />
+
+                <TextView
+                    android:id="@+id/fourth_q"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="FOURTH QUESTION"
+                    android:textAlignment="center"
+                    android:textColor="#323232"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/f_yes_fourth"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/panel_with_shadow_with_round_corners"
+                android:padding="16dp">
+
+                <CheckBox
+                    android:id="@+id/f_yes_fifth"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/yes"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/f_no_fifth"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/f_no_fifth"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="@string/no"
+                    android:textAlignment="inherit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/f_yes_fifth" />
+
+                <TextView
+                    android:id="@+id/fifth_q"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="FIFTH QUESTION"
+                    android:textAlignment="center"
+                    android:textColor="#323232"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/f_yes_fifth"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/done_panel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/panel_with_shadow_with_round_corners"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textColor="#404040"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

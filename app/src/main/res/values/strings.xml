@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MetaEducation</string>
+
+    <string name="metaeducation">MetaEducation</string>
+    <string name="algebra">Algebra</string>
+    <string name="geometry">Geometry</string>
+    <string name="informatica">Informatics</string>
+    <string name="everyday_reward">Daily Reward</string>
+    <string name="statistic">Statistics</string>
+    <string name="browser">Browser</string>
+
+    <!--Меню-->
+    <string name="main">Main</string>
+    <string name="video_tasks">Video lessons</string>
+    <string name="settings">Settings</string>
+
+    <string name="awards">Awards</string>
+    <string name="debug">DEBUG</string>
+
+    <string name="language">Language</string>
+
+    <string name="back">Back</string>
+    
+    <string name="done">Done</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="privacy_policy">All rights to video tutorials in the application belong to the YouTube channels "Хауди Хо","TutorOnline - lessons for schoolchildren". We dont want to mislead the user and assign the rights to their videos to ourselves. If you are a representative of the YouTube channel "TutorOnline" or "Хауди Хо" and you are not satisfied that your video lessons are in this application, then write about it by email faceswiper@gmail.com</string>
+
+</resources>
